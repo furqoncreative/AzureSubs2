@@ -43,6 +43,8 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
                 <br>
 				<input class="btn btn-primary" type="submit" name="submit" value="Upload">
 		</form>
+		<br>
+
         <table class="table table-striped table-bordered">
             <thead>
 				<tr>
@@ -64,7 +66,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 								<form action="analyze.php" method="post">
 									<input type="hidden" name="name" value="<?php echo $blob->getName()?>">
 									<input type="hidden" name="url" value="<?php echo $blob->getUrl()?>">
-									<input type="submit" name="submit" value="Analyze!" class="btn btn-primary">
+									<input type="submit" name="submit" value="Analyze" class="btn btn-success">
 								</form>
 							</td>
 						</tr>
